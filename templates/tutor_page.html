@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tutor's page</title>
+    <link rel="stylesheet" type="text/css"
+          href="{{ url_for('static', filename='style_tutor_page.css') }}">
+</head>
+<div>
+<h1>Tutor's Page</h1>
+    <div id="indent">
+<a href="/" class="button">Go to HomePage</a>
+<a href="/add_tutor" class="button">Back</a>
+    </div>
+<h2>Your Current Students:</h2>
+    <div id="style">
+        <ul>
+            <table>
+                <tr>
+                    <td><b>Student Id</b></td>
+                    <td><b>Name</b></td>
+                    <td><b>Age</b></td>
+                    <td><b>Class Year</b></td>
+                    <td><b>Major</b></td>
+                </tr>
+{% for student in students_from_tutor %}
+                <tr>
+                    <td>{{student['student_id']}}</td>
+                    <td>{{student['name']}}</td>
+                    <td>{{student['age']}}</td>
+                    <td>{{student['class_year']}}</td>
+                    <td>{{student['major']}}</td>
+                </tr>
+                 {% endfor %}
+            </table>
+        </ul>
+    </div>
+
+<h2>List of all Students:</h2>
+<div id="style">
+<ul>
+<table>
+    <tr>
+        <td><b>Student Id</b></td>
+        <td><b>Name</b></td>
+        <td><b>Age</b></td>
+        <td><b>Class Year</b></td>
+        <td><b>Major</b></td>
+        </tr>
+{% for student in student_list %}
+    <tr>
+        <td>{{student['student_id']}}</td>
+        <td>{{student['name']}}</td>
+        <td>{{student['age']}}</td>
+        <td>{{student['class_year']}}</td>
+        <td>{{student['major']}}</td>
+    </tr>
+    {% endfor %}
+</table>
+</ul>
+</div>
+
+<div class="form-box">
+<h3>Delete Student</h3>
+
+{% if display_notice %}
+    <p>
+    {% if successful_add %}
+        <span style="background-color: lightgreen;">
+    {% else %}
+        <span style="background-color: lightcoral;">
+    {% endif %}
+    {{ notice_text }}
+    </span>
+    </p>
+{% endif %}
+
+<form method = "post">
+    <div class="input-box">
+    <label for="id">Insert the ID of the student you want to delete:</label>
+    <br><br>
+    <input type="number" id="id" name="id">
+    <br>
+    <br>
+    <input type="submit" value="Submit">
+    </div>
+</form>
+</div>
+</body>
+</html>

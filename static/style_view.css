@@ -1,0 +1,114 @@
+h1 {
+    text-align: center;
+    font-family: verdana;
+    color: navy;
+    line-height: 75px;
+    font-size: 45px;
+
+    }
+
+h2 {
+    color: purple;
+    font-family: proxima nova;
+    text-indent: 50px;
+    line-height: 100px;
+    font-size: 25px;
+
+    }
+
+body{
+    margin: 0;
+    padding: 0;
+    background: url(https://cdn.pixabay.com/photo/2016/11/21/14/12/books-1845614_1280.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center-center;
+    font-family: sans-serif;
+
+    }
+
+a {
+    text-decoration: inherit;
+}
+#indented{
+    text-indent: 55px;
+}
+
+#indented2{
+    text-indent: 50px;
+    line-height: 75px;
+}
+
+#indented3{
+    text-indent: 50px;
+    line-height: 60px;
+}
+
+
+.Button {
+ color: slate blue;
+ font-family: monospace;
+ font-weight: 100%;
+ font-size: 17px;
+ text-align: center;
+ border: solid 2px #31A6FF;
+ border-radius: 25px;
+ padding: 10px 30px;
+ transition-duration: 200ms;
+
+}
+.Button:hover{
+ background-color: #31A6FF;
+ color: white;
+
+}
+
+
+.button {
+ color: slate blue;
+ font-family: monospace;
+ font-weight: 100%;
+ font-size: 17px;
+ text-align: center;
+ border: solid 2px #31A6FF;
+ border-radius: 25px;
+ padding: 10px 40px;
+ transition-duration: 200ms;
+ text-align: center;
+
+}
+.button:hover{
+ background-color: #31A6FF;
+ color: white;
+
+}
+.button2{
+ color: slate blue;
+ font-family: monospace;
+ font-weight: 100%;
+ font-size: 17px;
+ text-align: center;
+ border: solid 2px #31A6FF;
+ border-radius: 25px;
+ padding: 10px 55px;
+ transition-duration: 200ms;
+ text-align: center;
+
+}
+.button2:hover{
+ background-color: #31A6FF;
+ color: white;
+
+}
+
+.form-box{
+width: 300px;
+background: snow;
+margin: 0% 18%;
+padding: 40px 0;
+color: white;
+box-shadow: 0 0 20px 2px rgba(0,0,0,0.5);
+line-height: 60px;
+text-indent: 130px;
+
+}

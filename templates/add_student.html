@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Student</title>
+     <link rel="stylesheet" type="text/css"
+          href="{{ url_for('static', filename='style_add_student.css') }}">
+</head>
+<body>
+<h1>Student Login Page</h1>
+<div class="form-box">
+<h1>Log in</h1>
+
+{% if display_notice2 %}
+    <p>
+    {% if successful_add2 %}
+        <span style="background-color: lightgreen;">
+    {% else %}
+        <span style="background-color: blue;">
+    {% endif %}
+    {{ notice_text2 }}
+    </span>
+    </p>
+{% endif %}
+
+<form action="{{ url_for('add_student') }}" method = "post">
+    <div class="input-box">
+    <label for="username">Username:</label>
+    <br><br>
+    <input type="text" id="username" name="username">
+        <br><br>
+    <label for="password">Password:</label>
+    <br><br>
+    <input type="password" id="password" name="password">
+    <br><br>
+    <input type="checkbox" onclick="myFunction()">Show Password
+    <br>
+    <br>
+        <input type="submit" value="Login">
+    </div>
+</form>
+
+<script> function myFunction() {
+  var x = document.getElementById("password");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}</script>
+
+
+
+<h1>Create Account</h1>
+
+{% if display_notice %}
+    <p>
+    {% if successful_add %}
+        <span style="background-color: lightgreen;">
+    {% else %}
+        <span style="background-color: blue;">
+    {% endif %}
+    {{ notice_text }}
+    </span>
+    </p>
+{% endif %}
+
+
+<form action="{{ url_for('add_student') }}" method = "post">
+    <div class="input-box">
+    <label for="username">Username:</label>
+    <br><br>
+    <input type="text" id="username" name="username">
+    <br><br>
+    <label for="password">Password:</label>
+    <br><br>
+    <input type="text" id="password" name="password">
+    <br><br>
+    <label for="name">Name:</label>
+    <br><br>
+    <input type="text" id="name" name="name">
+    <br><br>
+    <label for="age">Age:</label>
+    <br><br>
+    <input type="number" id="age" name="age">
+    <br><br>
+    <label for="class year">Class Year:</label>
+    <br><br>
+    <input type="number" id="class year" name="class_year">
+    <br><br>
+    <label for="major">Major:</label>
+    <br><br>
+    <input type="text" id="major" name="major">
+    <br><br>
+    <br>
+    <input type="submit" value="Submit">
+    </div>
+</form>
+
+<p>
+    <br>
+    <div id="indent">
+<a href="/" class="button2">Back</a>
+    </div>
+</p>
+</div>
+
+</body>
+</html>

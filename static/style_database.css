@@ -1,0 +1,96 @@
+h1{
+font-family: tahoma;
+text-align: center;
+font-size: 45px;
+color: maroon;
+
+}
+
+body{
+ background: url(https://images.pexels.com/photos/574283/pexels-photo-574283.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-position: center-center;
+}
+
+.form-box{
+width: 500px;
+background: #FFF8DC;
+margin: 12% auto;
+padding: 40px 0;
+color: white;
+box-shadow: 0 0 20px 2px rgba(0,0,0,0.5);
+line-height: 50px;
+text-indent: 125px;
+
+}
+
+
+a {
+    text-decoration: inherit;
+}
+
+
+.Button {
+ color: slate blue;
+ font-family: monospace;
+ font-weight: 100%;
+ font-size: 17px;
+ text-align: center;
+ border: solid 2px #31A6FF;
+ border-radius: 20px;
+ padding: 10px 45px;
+ transition-duration: 200ms;
+ text-align: center;
+
+}
+.Button:hover{
+ background-color: #31A6FF;
+ color: white;
+}
+
+.button {
+ color: slate blue;
+ font-family: monospace;
+ font-weight: 100%;
+ font-size: 17px;
+ text-align: center;
+ border: solid 2px #31A6FF;
+ border-radius: 20px;
+ padding: 10px 55px;
+ transition-duration: 200ms;
+ text-align: center;
+
+
+}
+.button:hover{
+ background-color: #31A6FF;;
+ color: white;
+}
+
+.button2 {
+ color: slate blue;
+ font-family: monospace;
+ font-weight: 100%;
+ font-size: 17px;
+ text-align: center;
+ border: solid 2px #31A6FF;
+ border-radius: 20px;
+ padding: 10px 100px;
+ transition-duration: 200ms;
+ text-align: center;
+
+}
+.button2:hover{
+ background-color: #31A6FF;
+ color: white;
+}
+
+#indent{
+text-indent: 125px;
+line-height: 75px;
+}
+
+#indent2{
+text-indent: 125px;
+}

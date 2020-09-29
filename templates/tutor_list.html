@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tutor View</title>
+    <link rel="stylesheet" type="text/css"
+          href="{{ url_for('static', filename='style_tutor_list.css') }}">
+</head>
+<body>
+<h1>List of Tutors</h1>
+
+<div id="indented2">
+<a href="/database" class="button">Back</a>
+</div>
+
+<div id="style">
+<ul>
+    <table>
+        <tr>
+            <td><b>Tutor Id</b></td>
+            <td><b>Name</b></td>
+            <td><b>Age</b></td>
+            <td><b>Area of Expertise</b></td>
+            <td><b>Cost</b></td>
+        </tr>
+{% for tutor in tutor_list %}
+        <tr>
+            <td>{{tutor['tutor_id']}}</td>
+            <td>{{tutor['name']}}</td>
+            <td>{{tutor['age']}}</td>
+            <td>{{tutor['area_of_expertise']}}</td>
+            <td>{{tutor['cost']}}</td>
+        </tr>
+    {% endfor %}
+    </table>
+    </ul>
+</div>
+</body>
+</html>
+
